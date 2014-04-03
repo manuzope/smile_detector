@@ -24,7 +24,7 @@ def get_filename(fn):
     f = f.split(".")[0]
     return f
 
-iset = ImageSet("images/anshika")
+iset = ImageSet("images/willy")
 image_dict = {}
 
 for img in iset:
