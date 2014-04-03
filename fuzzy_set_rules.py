@@ -22,7 +22,7 @@ class FuzzySetRule:
 
     def addUpperAngleRule(self, func):
         self._upperAngleRules.append(func)
-
+        
     def addLowerAngleRule(self, func):
         self._lowerAngleRules.append(func)
 
