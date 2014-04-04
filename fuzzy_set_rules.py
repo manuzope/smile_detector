@@ -22,7 +22,7 @@ class FuzzySetRule:
 
     def addUpperAngleRule(self, func):
         self._upperAngleRules.append(func)
-        
+
     def addLowerAngleRule(self, func):
         self._lowerAngleRules.append(func)
 
@@ -51,5 +51,3 @@ def readFuzzySetFile(input_file):
             fuzzy_set_rules[output].addLowerAngleRule(rule2)
 
     return fuzzy_set_rules
-
-fuzzy_rules = readFuzzySetFile('smile_data_set.tsv')
