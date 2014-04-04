@@ -35,10 +35,10 @@ def large_positive_ang(x):
     return up(22.5, 45.0, x)
 
 def frown(x):
-    return down(0.5, 0.75, x)
+    return down(0.375, 0.75, x)
 
 def netural(x):
     return trapezoidal(0.0, 0.375, 0.625 ,1.0, x)
 
 def smile(x):
-    return up(0.25, 0.5, x)
+    return up(0.25, 0.625, x)

@@ -13,13 +13,13 @@ if upper_ang is zero_ang and lower_ang is negative_ang then face is neutral
 if upper_ang is zero_ang and lower_ang is zero_ang then face is neutral
 if upper_ang is zero_ang and lower_ang is positive_ang then face is smile
 if upper_ang is zero_ang and lower_ang is large_positive_ang then face is smile
-if upper_ang is positive_ang and lower_ang is large_negative_ang then face is frown
-if upper_ang is positive_ang and lower_ang is negative_ang then face is frown
+if upper_ang is positive_ang and lower_ang is large_negative_ang then face is neutral
+if upper_ang is positive_ang and lower_ang is negative_ang then face is neutral
 if upper_ang is positive_ang and lower_ang is zero_ang then face is neutral
 if upper_ang is positive_ang and lower_ang is positive_ang then face is neutral
 if upper_ang is positive_ang and lower_ang is large_positive_ang then face is smile
-if upper_ang is large_positive_ang and lower_ang is large_negative_ang then face is frown
-if upper_ang is large_positive_ang and lower_ang is negative_ang then face is frown
+if upper_ang is large_positive_ang and lower_ang is large_negative_ang then face is neutral
+if upper_ang is large_positive_ang and lower_ang is negative_ang then face is neutral
 if upper_ang is large_positive_ang and lower_ang is zero_ang then face is neutral
 if upper_ang is large_positive_ang and lower_ang is positive_ang then face is neutral
 if upper_ang is large_positive_ang and lower_ang is large_positive_ang then face is neutral
