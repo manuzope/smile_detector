@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
 
     correct = 0
-    total_smiles = 0
+    total = 0
 
     for subject, states in data.iteritems():
         for face, points in states.iteritems():
@@ -47,14 +47,18 @@ if __name__ == '__main__':
 
             output = max(result, key=itemgetter(1))
 
-            if 'smile' in output[0]:
-                    correct += 1
-
             if 'smile' in face:
-                total_smiles += 1
+                if 'smile' in output[0]:
+                    correct += 1
+                total += 1
 
-    if total_smiles != 0:
+            else:
+                if 'neutral' in output[0]:
+                    correct += 1
+                total += 1
+
+    if total != 0:
         print '---------------------------------'
-        print 'total samples: ', total_smiles
+        print 'total samples: ', total
         print 'correct samples: ', correct
-        print float(correct)/float(total_smiles)
+        print 'smile accuracy: ', float(correct)/float(total)
